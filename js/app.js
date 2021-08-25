@@ -10,10 +10,10 @@ function getPin() {
         // console.log('got 3 digit', pin);
         return getPin();
     }
-}
+};
 
 function generatePin() {
     const pin = getPin();
     document.getElementById('display-pin').value = pin;
-}
+};
 
