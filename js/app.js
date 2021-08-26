@@ -20,6 +20,7 @@ function generatePin() {
 document.getElementById('key-pad').addEventListener('click', function (event) {
     const number = event.target.innerText;
     const calc = document.getElementById('typed-numbers');
+
     calc.value = number;
 
 });
