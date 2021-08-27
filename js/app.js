@@ -36,6 +36,16 @@ document.getElementById('key-pad').addEventListener('click', function (event) {
 });
 
 function verifyPin() {
+    const pin = document.getElementById('display-pin').value;
+    const typedNumber = document.getElementById('typed-numbers').value;
+    if (pin == typedNumber) {
+        console.log('Matched');
+    }
+    else {
+        console.log('Caution');
+    }
+
+
 
 };
 
