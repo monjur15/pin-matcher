@@ -39,12 +39,11 @@ function verifyPin() {
     const pin = document.getElementById('display-pin').value;
     const typedNumber = document.getElementById('typed-numbers').value;
     if (pin == typedNumber) {
-        console.log('Matched');
+        console.log('Matched, yahoo');
     }
     else {
-        console.log('Caution');
+        console.log('Caution!!!');
     }
-
 
 
 };
