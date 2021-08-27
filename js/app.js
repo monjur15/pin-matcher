@@ -35,3 +35,7 @@ document.getElementById('key-pad').addEventListener('click', function (event) {
 
 });
 
+function verifyPin() {
+
+};
+
