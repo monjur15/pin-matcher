@@ -38,11 +38,17 @@ document.getElementById('key-pad').addEventListener('click', function (event) {
 function verifyPin() {
     const pin = document.getElementById('display-pin').value;
     const typedNumber = document.getElementById('typed-numbers').value;
+    const succesNotification = document.getElementById('notify-success');
+    const failNotification = document.getElementById('notify-fail');
     if (pin == typedNumber) {
-        console.log('Matched, yahoo');
+
+        succesNotification.style.display = 'block';
+        failNotification.style.display = 'none';
+
     }
     else {
-        console.log('Caution!!!');
+        succesNotification.style.display = 'none';
+        failNotification.style.display = 'block';
     }
 
 
