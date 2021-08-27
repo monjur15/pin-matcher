@@ -21,9 +21,17 @@ document.getElementById('key-pad').addEventListener('click', function (event) {
     // debugger;
     const number = event.target.innerText;
     const calcInput = document.getElementById('typed-numbers');
-    const previousNumber = calcInput.value;
-    const newCalc = previousNumber + number;
-    calcInput.value = newCalc;
+    if (isNaN(number)) {
+        if (number == 'C') {
+            calcInput.value = '';
+        }
+    }
+    else {
+
+        const previousNumber = calcInput.value;
+        const newNumber = previousNumber + number;
+        calcInput.value = newNumber;
+    }
 
 });
 
